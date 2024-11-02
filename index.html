@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сокращатель ссылок</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <div class="about">
+            <h1>Сокращатель ссылок</h1>
+            <p>Позволяю сокращать ссылки</p>
+        </div>
+        <form class="link-input-container" id="form">
+            <input type="text" id="long" class="long" name="long" placeholder="https://example.com">
+            <button type="submit" id="submit" class="submit-btn">Сократить</button>
+        </form>
+        <div class="link-shortened-container hidden" id="shortened">
+            <div class="linkinfo">
+                <div class="shorturl" id="shorturl">https://example.com</div>
+                <div class="buttons">
+                    <button id="copyButton" class="btn">Копировать</button>
+                    <button id="downloadQR" class="btn">Скачать QR</button>
+                </div>
+            </div>
+            <img src="" alt="QR" id="qr" class="qr">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
